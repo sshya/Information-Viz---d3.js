@@ -1,0 +1,164 @@
+.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.cursive {
+    font-family: Satisfy, cursive;
+    font-weight: normal;
+    font-size: 24px !important;
+    padding-top: 10px;
+}
+
+.desc {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 16px !important;
+    padding-top: 5px;
+}
+
+#bar_div {
+  font: 10px sans-serif !important;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+/*.x.axis path {
+  display: none;
+}*/
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px !important;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+</style>
+<style>
+/*area chart*/
+    #chart-container {
+  width: 700px; 
+  margin: 0 auto 50px auto;
+  background: rgba(255,255,255,0.5);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  padding: 10px 30px;
+    }
+
+    svg {
+  font-family: 'Lato', Arial, serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+    }
+
+    text.country-title {
+  font-size: 10px;
+    }
+
+    text.instructions {
+  font-size: 16px;
+    }
+
+    g.context g.brush rect.background {
+  fill: rgba(0,0,0,.1);
+    }
+
+    g.context g.axis path {
+  stroke-opacity: 0;
+    }
+
+    g.context g.axis line {
+  stroke-opacity: .1;
+    }
+
+    g.staten.island path.chart {
+  fill: rgba(127,201,127,0.5);
+    }
+
+    g.queens path.chart {
+  fill: rgba(127,201,174,0.5);
+    }
+
+    g.manhattan path.chart {
+  fill: rgba(127,183,201,0.5);
+    }
+
+    g.brooklyn path.chart {
+  fill: rgba(127,130,201,0.5);
+    }
+
+    g.bronx path.chart {
+  fill: rgba(171,127,201,0.5);
+    }
+
+    .axis path, .axis line {
+  fill: none;
+  stroke: #aaa;
+  shape-rendering: crispEdges;
+    }
+
+    .brush .extent {
+  stroke: #f09f8c;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+    }
+
+    g.context rect.background{
+  fill: rgb(200,200,255);
+  visibility: visible !important;
+    }
+
+
+/*
+line chart*/
+
+
+#chart-line > svg > g > path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+#chart-line > svg > g > g.x.axis path,
+#chart-line > svg > g > g.x.axis.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}

@@ -1,5 +1,3 @@
-# Information-Viz---d3.js
-
 Shwetha Shyam Sunder, CS725-HW9, Spring 2018
 # VSUALIZING CRIME REPORTED TO NYPD
 

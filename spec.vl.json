@@ -1,0 +1,11 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "yearwiseboroughcrime.csv"},
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "OccurrenceYear", "type": "temporal", "timeUnit": "year"},
+    "y": {"field": "Number_of_Records", "type": "quantitative"},
+    "color": {"field": "Borough", "type": "nominal"}
+  }
+}
